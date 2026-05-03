@@ -13,31 +13,19 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <dependencyManagement>
-    <dependencies>
-      <!-- BOM ensures consistent Selenium modules -->
-      <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-bom</artifactId>
-        <version>4.21.0</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
   <dependencies>
     <!-- Selenium -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
+      <version>4.21.0</version>
     </dependency>
 
-    <!-- If you need CDP features, pick a supported devtools version -->
-    <!-- Example: v86 (exists in Maven Central) -->
+    <!-- DevTools module (pick one that exists in Maven Central) -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-devtools-v86</artifactId>
+      <version>4.21.0</version>
     </dependency>
 
     <!-- Cucumber -->
