@@ -21,13 +21,6 @@
       <version>4.21.0</version>
     </dependency>
 
-    <!-- DevTools module (pick one that exists in Maven Central) -->
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-devtools-v86</artifactId>
-      <version>4.21.0</version>
-    </dependency>
-
     <!-- Cucumber -->
     <dependency>
       <groupId>io.cucumber</groupId>
