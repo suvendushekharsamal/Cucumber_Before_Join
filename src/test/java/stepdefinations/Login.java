@@ -55,9 +55,10 @@ driver.findElement(By.id("login")).click();
 
 @Then("page will navigate to home page")
 public void page_will_navigate_to_home_page() throws InterruptedException {
-	Thread.sleep(5000);
-   WebElement text = driver.findElement(By.xpath("/html/body/app-root/app-dashboard/app-sidebar/nav/label[1]/div/a/div/h3"));
-   System.out.println(text.getText());
+
+   By homePg = By.xpath("/html/body/app-root/app-dashboard/app-sidebar/nav/label[1]/div/a/div/h3");
+   page.homePageNavigation(homePg);
+
 }
 
 @Then("validate you are in home page")
